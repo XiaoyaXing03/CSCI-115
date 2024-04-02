@@ -1,0 +1,240 @@
+<!--CSCI 115 MiniProject-->
+<!--Xiaoya Xing-->
+<!--664977774-->
+<!--Anime-->
+<!--Page 6-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html tutorial, css tutorial">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <title>Xiaoya's Favorite Anime</title>
+
+    <link rel="stylesheet" type="text/css" href="css/back_to_page.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        
+        body{
+            background-color: #0f59a4;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment:scroll;
+            background-position: center;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /*Page Content*/
+        .title{
+            text-align: left;
+            font-size: 35px;
+            color:#c6daf1;
+            font-family: Georgia, serif;
+            font-weight: bold;
+            padding-top: 10px;
+            padding-left: 280px;
+            padding-bottom: 20px;
+            padding-right: 800px;
+        }
+
+        .hobby{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .hobbies_1{
+            width: 850px;
+            height: 600px;
+            margin-left: 270px;
+            margin-right: 100px;
+            margin-bottom: 70px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hobbies_2{
+            width: 850px;
+            height: 600px;
+            margin-left: 270px;
+            margin-right: 100px;
+            margin-bottom: 70px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hobbies_3{
+            width: 300px;
+            height: 300px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 120px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hobbies_1 img, .hobbies_2 img{
+            width: 100%;
+            height: 100%;
+            display: block;
+            transition: transform 2.5s ease;
+            object-fit: cover;
+        }
+
+        .hobbies_3 img{
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .hobby_text{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: #e4edf7;
+            text-align: center;
+            font-size: 25px;
+            font-family: Georgia, serif;
+            background-color: #074684;  
+        }
+
+        .hobbies_1:hover img, .hobbies_2:hover img {
+            transform: scale(1.35);
+        }
+
+        .intro_text{
+            display: block;
+            text-align: justify;
+            font-family: Georgia, serif;
+            font-size: 20px;
+            color: #e4edf7;
+            margin: 10px 180px;
+        }
+
+        .intro{
+            margin-left: 30px;
+            margin-right: 50px;
+            margin-bottom: 90px;
+            line-height: 200%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 70px;
+            margin-left: 100px;
+            background-color: #074684;
+        }
+
+        th, td {
+            border: 3px solid #0f59a4;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #074684;
+        }
+
+        tr{
+            font-family: Georgia, serif;
+            color: #e4edf7;
+            font-size: 120%;
+        }
+
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Nav Bar-->
+    <div>
+        <div class="header">
+            <ul>
+                <li><a href="1_mainpage.html">Home</a></li>
+
+                <li><a href="2_aboutme_page.html">About Me</a></li>
+                
+
+                <li><a href="3_myhobby_page.html">My Hobby</a>
+                    <ul class="hobbit_subtitles">
+                        <li><a href="4_travel_page.html">Travel</a></li>
+                        <li><a href="5_gamemusic_page.html">Game & Music</a></li>
+                        <li><a href="6_anime_page.html">Anime</a></li>
+                        <li><a href="7_myidol_page.html">My Idol</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!--Title-->
+    <div>
+        <div class="hobby">
+            <p class="title">My Fevorite Anime</p>
+
+            <!--China-->
+            <div class="hobbies_1"> 
+                    <img src="image/hzw4.jpeg" alt="One Piece">
+                <div><p class="hobby_text">One Piece</p></div>
+            </div>
+            
+            <div class="intro_text">
+                <p class="intro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="font-size: 130%;">One Piece,</strong> as one of my favorite anime, mainly appeals to me because of its positive and uplifting content. While some might find the plot clichéd, it has been with me from my childhood—accompanying me from elementary school to university. Luffy has become more than just a name of an anime character; he's like a peer growing up alongside me. Watching him defeat seemingly flawless bosses with his punches and kicks fills me with motivation for the unknown future.</p>
+            </div>
+            
+            <!--Three Small Photos-->
+            <div class="hobbies_3">
+                    <img src="image/hzw2.jpg" alt="Chengdu Hot Pot">
+            </div>
+
+            <div class="hobbies_3">
+                    <img src="image/hzw3.jpg" alt="Hobby 2">
+            </div>
+
+            <div class="hobbies_3">
+                    <img src="image/hzw5.jpeg" alt="Hobby 2">    
+            </div>
+
+            <!--Free!-->
+            <div class="hobbies_2">
+                <img src="image/free2.jpg" alt="Xi'an Map">
+                <div><p class="hobby_text">Free!</p></div>
+            </div>
+
+            <div class="intro_text">
+                <p class="intro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="font-size: 130%;">Free!</strong> is an anime centered around competitive sports, where the author intertwines complex interpersonal relationships and developments amidst the competitions. Compared to the protagonist, Haruka Nanase, I prefer his childhood friend Makoto Tachibana. He's more like an ordinary person among a group of talented athletes. Realizing he could never surpass his more gifted friends, he chooses to give up competing and works hard to become a sports coach instead. I admire his gentleness and tolerance; he's like the calming water around Haruka Nanase, having such a friend is undoubtedly very reassuring and grateful.</p>
+            </div>
+        </div>
+    </div>
+    <hr class="line">
+
+    <div class="go_back">
+        <a href="3_myhobby_page.html" class="back_to">——&nbsp;Back to My Hobby&nbsp;——</a> 
+        <br>
+        <a href="1_mainpage.html" class="back_to">——&nbsp;Back to Home&nbsp;——</a>
+    </div>
+       
+</body>
+</html>

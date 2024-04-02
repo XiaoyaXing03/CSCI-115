@@ -1,0 +1,255 @@
+<!--CSCI 115 MiniProject-->
+<!--Xiaoya Xing-->
+<!--664977774-->
+<!--Search Bar & About-->
+<!--Page 2-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html tutorial, css tutorial">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <title>About Xiaoya</title>
+
+    <link rel="stylesheet" type="text/css" href="css/back_to_page.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        
+        body{
+            background-color: #0f59a4;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment:scroll;
+            background-position: center;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /*Page Content*/
+        .title{
+            text-align: left;
+            font-size: 40px;
+            color:#c6daf1;
+            font-family: Georgia, serif;
+            font-weight: bold;
+            padding-top: 10px;
+            padding-left: 320px;
+            padding-bottom: 20px;
+        }
+
+        #myphoto{
+            width: 200px;
+            height: 200px;
+            margin-left: 320px;
+            display: flex;
+            border-radius: 10%;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .profile_image{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .profile_text1{
+            text-align: left;
+            font-family: Georgia, serif;
+            font-size: 20px;
+            color: #e4edf7;
+            margin: 40px 200px 10px;
+        }
+
+        .profile_text1 > p{
+            margin-bottom: 20px;
+        }
+
+        .profile_text2{
+            display: block;
+            text-align: justify;
+            font-family: Georgia, serif;
+            font-size: 15px;
+            color: #e4edf7;
+            margin: 50px 350px;
+        }
+
+        .profile_text2 > p{
+            margin-bottom: 20px;
+        }
+
+        #email_add:hover{
+            transition: 0.5s;
+            color: #eff4cf;
+        }
+
+        #email_add:active{
+            color: #ebe79d;
+        }
+
+        #intro{
+            margin-left: 30px;
+            margin-right: 70px;
+            margin-bottom: 10px;
+            line-height: 130%;
+        }
+
+        .title_2{
+            text-align: left;
+            font-size: 35px;
+            color:#c6daf1;
+            font-family: Georgia, serif;
+            font-weight: bold;
+            padding-top: 10px;
+            padding-left: 320px;
+            padding-bottom: 20px;
+            padding-right: 921px;
+        }
+
+        .hobby{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .hobbies_1{
+            width: 300px;
+            height: 210px;
+            margin-left: 310px;
+            margin-right: 100px;
+            margin-bottom: 70px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hobbies_2{
+            width: 300px;
+            height: 210px;
+            margin-left: 100px;
+            margin-right: 310px;
+            margin-bottom: 70px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hobbies_1 img, .hobbies_2 img{
+            width: 100%;
+            height: 100%;
+            display: block;
+            transition: transform 0.5s ease;
+            object-fit: cover;
+        }
+
+        .hobby_text{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: #e4edf7;
+            text-align: center;
+            font-size: 20px;
+            font-family: Georgia, serif;
+            background-color: #0f59a4;  
+        }
+
+        .hobbies_1:hover img, .hobbies_2:hover img {
+            transform: scale(1.35);
+        }
+    </style>
+</head>
+
+<body>
+    <!--Nav Bar-->
+    <div>
+        <div class="header">
+            <ul>
+                <li><a href="1_mainpage.html">Home</a></li>
+
+                <li><a href="2_aboutme_page.html">About Me</a></li>
+                
+
+                <li><a href="3_myhobby_page.html">My Hobby</a>
+                    <ul class="hobbit_subtitles">
+                        <li><a href="4_travel_page.html">Travel</a></li>
+                        <li><a href="5_gamemusic_page.html">Game & Music</a></li>
+                        <li><a href="6_anime_page.html">Anime</a></li>
+                        <li><a href="7_myidol_page.html">My Idol</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!--Title-->
+    <div>
+        <h3 class ="title">About Me</h3>
+        
+        <div class="profile_image">
+            <img src="image/me.JPG" alt="MyPhoto" id="myphoto">
+
+            <div class="profile_text1">
+                <p><strong>Name: </strong> Xiaoya Xing &nbsp; (邢小丫)</p>
+                <p><strong>University: </strong> Vancouver Island University</p>
+                <p><strong>Email:</strong><a href="mailto:xiaoyaxing2003@gmail.com" id="email_add"> xiaoyaxing2003@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="profile_text2">
+            <p><strong>Hobby: &nbsp;</strong> Travel &nbsp; & &nbsp; Game &nbsp; & &nbsp;Music &nbsp; & &nbsp; TV Show &nbsp; & &nbsp; Anime</p>
+            <p><strong>Introduction: &nbsp;</strong> 
+                <p id="intro">
+                    I am a student at Vancouver Island University. 
+                    And I'm very fond of visiting museums, which is why I have a great interest in traveling and taking photos. In my free time, I enjoy listening to music and playing games. Sometimes, I watch TV dramas, anime, and following a celebrity. I used to engage in handicrafts at home, such as carving eraser stamps and Perler Beads art, but I stopped because it was inconvenient to continue after moving. Now, I pass the time by drawing. I'm not very good at it, but I believe with more practice, I can significantly improve in the future. I'd like to learn how to play the Dizi. I can play the piano, but for the same reason as the eraser carving – because it's quite inconvenient to practice. I'm considering learning the Dizi during the summer vacation when I return to China.
+                
+                    br/>邢小丫，03年生: 咯噔文学家、跑调歌手、IMBT、扭曲画师、穿孔新人，拼多多达人，钢琴艺人、踩组小句号、钛合金眉钉、腐蟑螂、❤️wzmwadyx❤️
+                </p>        
+        </div>
+
+        <div class="hobby">
+            <p class="title_2">My Hobby</p>
+
+            <div class="hobbies_1">
+                <a href="4_travel_page.html" class="hobby_text">Travel
+                    <img src="image/terracottaarmy.jpg" alt="Hobby 1">
+                </a>
+            </div>
+
+            <div class="hobbies_2">
+                <a href="5_gamemusic_page.html" class="hobby_text">
+                    <img src="image/yingzheng1.jpg" alt="Hobby 2">
+                </a>
+            </div>
+
+            <div class="hobbies_1">
+                <a href="6_anime_page.html" class="hobby_text">
+                    <img src="image/hzw1.jpg" alt="Hobby 3">
+                </a>
+            </div>
+
+            <div class="hobbies_2">
+                <a href="7_myidol_page.html" class="hobby_text">
+                    <img src="image/tvshow1.jpg" alt="Hobby 4">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <hr class="line">
+
+    <div class="go_back">
+        <a href="1_mainpage.html" class="back_to">——&nbsp;Back to Home&nbsp;——</a> 
+    </div>
+       
+</body>
+</html>

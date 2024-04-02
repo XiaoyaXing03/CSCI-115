@@ -1,0 +1,28 @@
+/*CSCI 115 MiniProject*/
+/*Xiaoya Xing*/
+/*Go Back to XXX*/
+
+.go_back{
+    text-align: center;
+    font-size: 25px;
+    color:#c6daf1;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    margin-bottom: 80px;
+    margin-top: 30px;
+}
+
+.back_to:hover{
+    transition: 0.5s;
+    color: #ebe79d;
+}
+
+.back_to:active{
+    color: #0a3d71;
+}
+
+.line{
+    width: calc(100% - 300px);
+    margin: 0 auto;
+    color: #c6daf1;
+}

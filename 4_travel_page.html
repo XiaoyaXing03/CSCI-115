@@ -1,0 +1,331 @@
+<!--CSCI 115 MiniProject-->
+<!--Xiaoya Xing-->
+<!--664977774-->
+<!--Travel-->
+<!--Page 4-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html tutorial, css tutorial">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <title>Xiaoya's Trval Guide</title>
+
+    <link rel="stylesheet" type="text/css" href="css/back_to_page.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        
+        body{
+            background-color: #0f59a4;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment:scroll;
+            background-position: center;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /*Page Content*/
+        .title{
+            text-align: left;
+            font-size: 35px;
+            color:#c6daf1;
+            font-family: Georgia, serif;
+            font-weight: bold;
+            padding-top: 10px;
+            padding-left: 320px;
+            padding-bottom: 20px;
+            padding-right: 800px;
+        }
+
+        .hobby{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .hobbies_1{
+            width: 850px;
+            height: 600px;
+            margin-left: 270px;
+            margin-right: 100px;
+            margin-bottom: 70px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hobbies_2{
+            width: 850px;
+            height: 600px;
+            margin-left: 270px;
+            margin-right: 100px;
+            margin-bottom: 70px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hobbies_3{
+            width: 300px;
+            height: 300px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 70px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hobbies_1 img, .hobbies_2 img{
+            width: 100%;
+            height: 100%;
+            display: block;
+            transition: transform 2.5s ease;
+            object-fit: cover;
+        }
+
+        .hobbies_3 img{
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .hobby_text{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: #e4edf7;
+            text-align: center;
+            font-size: 25px;
+            font-family: Georgia, serif;
+            background-color: #074684;  
+        }
+
+        .hobbies_1:hover img, .hobbies_2:hover img {
+            transform: scale(1.35);
+        }
+
+        .intro_text{
+            display: block;
+            text-align: justify;
+            font-family: Georgia, serif;
+            font-size: 20px;
+            color: #e4edf7;
+            margin: 10px 180px;
+        }
+
+        .intro{
+            margin-left: 30px;
+            margin-right: 50px;
+            margin-bottom: 90px;
+            line-height: 200%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 70px;
+            margin-left: 100px;
+            background-color: #074684;
+        }
+
+        th, td {
+            border: 3px solid #0f59a4;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #074684;
+        }
+
+        tr{
+            font-family: Georgia, serif;
+            color: #e4edf7;
+            font-size: 120%;
+        }
+
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Nav Bar-->
+    <div>
+        <div class="header">
+            <ul>
+                <li><a href="1_mainpage.html">Home</a></li>
+
+                <li><a href="2_aboutme_page.html">About Me</a></li>
+                
+
+                <li><a href="3_myhobby_page.html">My Hobby</a>
+                    <ul class="hobbit_subtitles">
+                        <li><a href="4_travel_page.html">Travel</a></li>
+                        <li><a href="5_gamemusic_page.html">Game & Music</a></li>
+                        <li><a href="6_anime_page.html">Anime</a></li>
+                        <li><a href="7_myidol_page.html">My Idol</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!--Title-->
+    <div>
+            <div class="hobby">
+            <p class="title">Travel Guide</p>
+
+            <!--China-->
+            <div class="hobbies_1"> 
+                    <img src="image/chinamap.jpg" alt="China Map">
+                <div><p class="hobby_text">China Map</p></div>
+            </div>
+            
+            <div class="intro_text">
+                <p class="intro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="font-size: 130%;">Over the past three years,</strong>  I have visited Beijing, Xi'an, Sichuan, Shanghai, Wuhan, Nanjing, Hong Kong, and Taipei in China. During this time, I've encountered many wonderful people and experiences and achieved many of my travel goals. Most of the time, I traveled with family and friends. My upcoming travel plan is to go to Gansu Province; I'm very interested in the local cuisine, natural scenery, and historical sites there, and I'm planning to visit this summer. I hope to explore most of China in the future!</p>
+            </div>
+            
+            <!--Three Small Photos-->
+            <div class="hobbies_3">
+                    <img src="image/chengdu.jpg" alt="Chengdu Hot Pot">
+                <div><p class="hobby_text">Sichuan Hot Pot</p></div>
+            </div>
+
+            <div class="hobbies_3">
+                    <img src="image/xian6.jpg" alt="Hobby 2">
+                <div><p class="hobby_text">Xi'an</p></div>
+            </div>
+
+            <div class="hobbies_3">
+                    <img src="image/chengdu2.jpg" alt="Hobby 2">
+                <div><p class="hobby_text">Chengdu</p></div>
+            </div>
+
+            <!--Xi'an-->
+            <div class="hobbies_2">
+                <img src="image/xianmap.jpg" alt="Xi'an Map">
+                <div><p class="hobby_text">Xi'an Map</p></div>
+            </div>
+
+            <div class="intro_text">
+                <p class="intro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="font-size: 130%;">I'm from Xi'an, Shaanxi,</strong>   where my hometown is famous for its delicious food and ancient culture. The Terracotta Army, known for being the gigantic accompanying burial army of Emperor Qin Shi Huang, the first emperor of China, is located in Lintong District, Xi'an, Shaanxi Province. Xi'an is also referred to as the "Ancient Capital of Thirteen Dynasties," and its 3,000 years of historical sedimentation has resulted in a vast number of museums. Last summer, I embarked on my second journey to explore the museums of Shaanxi, but due to time constraints, I was unable to complete the tour. This summer vacation, I plan to continue exploring these museums!</p>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <th>Tourist Attractions</th>
+                        <th>Names</th>
+                        <th>Photos</th>
+                      </tr>
+                      <tr>
+                        <td rowspan="11">Historical Sites</td>
+                        <td>Shaanxi History Museum</td>
+                        <td rowspan="5"><img src="image/xian1.jpg" alt="Hobby 2"></td>
+                      </tr>
+                      <tr>
+                        <td>Shaanxi Archaeology Museum</td>
+                      </tr>
+                      <tr>
+                        <td>Terracotta Warriors & Huaqing Pool</td>
+                      </tr>
+                      <tr>
+                        <td>Zhao Mausoleum & Qian Mausoleum & Mao Mausoleum</td>
+                      </tr>
+                      <tr>
+                        <td>Tang Paradise & Giant Wild Goose Pagoda & Great Tang All Day Mall</td>
+                      </tr>
+                      <tr>
+                        <td>Bell Tower & Drum Tower & Xi'an City Wall</td>
+                        <td rowspan="6"><img src="image/xian2.jpg" alt="Hobby 2"></td>
+                      </tr>
+                      <tr>
+                        <td>Stele Forest Museum</td>
+                      </tr>
+                      <tr>
+                        <td>Famen Temple</td>
+                      </tr>
+                      <tr>
+                        <td>Mausoleum of the Yellow Emperor</td>
+                      </tr>
+                      <tr>
+                        <td>Xi'an Incident Memorial Hall</td>
+                      </tr>
+                      <tr>
+                        <td>Guangren Temple & Dacien Temple & Da Xingshan Temple</td>
+                      </tr>
+                      
+                      <tr>
+                        <td rowspan="3">Natural Scenery</td>
+                        <td>Mount Hua</td>
+                        <td rowspan="3"><img src="image/xian3.jpg" alt="Hobby 2"></td>
+                      </tr>
+                      <tr>
+                        <td>Lishan (Near Huaqing Pool)</td>
+                      </tr>
+                      <tr>
+                        <td>Hukou Waterfall</td>
+                      </tr>
+
+                      <tr>
+                        <td rowspan="4">Culinary Delights</td>
+                        <td>Yongxing Square</td>
+                        <td rowspan="4"><img src="image/xian4.jpg" alt="Hobby 2"></td>
+                      </tr>
+                      <tr>
+                        <td>Muslim Street</td>
+                      </tr>
+                      <tr>
+                        <td>Sajinqiao</td>
+                      </tr>
+                      <tr>
+                        <td>Yuanjiacun</td>
+                      </tr>
+                      
+                      <tr>
+                        <td rowspan="3">Others</td>
+                        <td>SEG Plaza</td>
+                        <td rowspan="3"><img src="image/xian5.jpg" alt="Hobby 2"></td>
+                      </tr>
+                      <tr>
+                        <td>The Song of Everlasting Sorrow</td>
+                      </tr>
+                      <tr>
+                        <td>Chang'an Twelve Hours</td>
+                      </tr>
+
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <hr class="line">
+
+    <div class="go_back">
+        <a href="3_myhobby_page.html" class="back_to">——&nbsp;Back to My Hobby&nbsp;——</a> 
+        <br>
+        <a href="1_mainpage.html" class="back_to">——&nbsp;Back to Home&nbsp;——</a>
+    </div>
+       
+</body>
+</html>

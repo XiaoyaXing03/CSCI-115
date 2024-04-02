@@ -1,0 +1,170 @@
+<!--CSCI 115 MiniProject-->
+<!--Xiaoya Xing-->
+<!--664977774-->
+<!--Hobby-->
+<!--Page 3-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html tutorial, css tutorial">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <title>Xiaoya's hobbies</title>
+
+    <link rel="stylesheet" href="css/back_to_page.css">
+    <link rel="stylesheet" href="css/header.css">
+    
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        
+        body{
+            background-color: #0f59a4;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment:scroll;
+            background-position: center;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /*Page Content*/
+        .title{
+            text-align: left;
+            font-size: 35px;
+            color:#c6daf1;
+            font-family: Georgia, serif;
+            font-weight: bold;
+            padding-top: 10px;
+            padding-left: 320px;
+            padding-bottom: 20px;
+            padding-right: 921px;
+        }
+
+        .hobby{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .hobbies_1{
+            width: 300px;
+            height: 300px;
+            margin-left: 310px;
+            margin-right: 100px;
+            margin-bottom: 70px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hobbies_2{
+            width: 300px;
+            height: 300px;
+            margin-left: 100px;
+            margin-right: 310px;
+            margin-bottom: 70px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hobbies_1 img, .hobbies_2 img{
+            width: 100%;
+            height: 100%;
+            display: block;
+            transition: transform 0.5s ease;
+            object-fit: cover;
+        }
+
+        .hobby_text{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: #e4edf7;
+            text-align: center;
+            font-size: 25px;
+            font-family: Georgia, serif;
+            background-color: #074684;  
+        }
+
+        .hobbies_1:hover img, .hobbies_2:hover img {
+            transform: scale(1.35);
+        }
+    </style>
+</head>
+
+<body>
+    <!--Nav Bar-->
+    <div>
+        <div class="header">
+            <ul>
+                <li><a href="1_mainpage.html">Home</a></li>
+
+                <li><a href="2_aboutme_page.html">About Me</a></li>
+                
+
+                <li><a href="3_myhobby_page.html">My Hobby</a>
+                    <ul class="hobbit_subtitles">
+                        <li><a href="4_travel_page.html">Travel</a></li>
+                        <li><a href="5_gamemusic_page.html">Game & Music</a></li>
+                        <li><a href="6_anime_page.html">Anime</a></li>
+                        <li><a href="7_myidol_page.html">My Idol</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!--Title-->
+    <div>
+            <div class="hobby">
+            <p class="title">My Hobby<br></p>
+
+            <div class="hobbies_1">
+                <a href="4_travel_page.html"> 
+                    <img src="image/flower.jpg" alt="Hobby 1">
+                </a>
+                <div><p class="hobby_text">Travel</p></div>
+            </div>
+
+            <div class="hobbies_2">
+                <a href="5_gamemusic_page.html" class="hobby_text"> Game & Music
+                    <img src="image/nansanhuandonglu.jpg" alt="Hobby 2">
+                </a>
+                <div><p class="hobby_text">Game & Music</p></div>
+            </div>
+
+            <div class="hobbies_1">
+                <a href="6_anime_page.html" class="hobby_text"> Anime
+                    <img src="image/free.jpg" alt="Hobby 3">
+                </a>
+                <div><p class="hobby_text">Anime</p></div>
+            </div>
+
+            <div class="hobbies_2">
+                <a href="7_myidol_page.html" class="hobby_text"> My Idol
+                    <img src="image/wzm1.JPG" alt="Hobby 4">
+                </a>
+                <div><p class="hobby_text">My Idol</p></div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="line">
+
+    <div class="go_back">
+        <a href="1_mainpage.html" class="back_to">——&nbsp;Back to Home&nbsp;——</a> 
+    </div>
+       
+</body>
+</html>

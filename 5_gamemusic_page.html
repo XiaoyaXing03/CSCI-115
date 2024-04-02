@@ -1,0 +1,244 @@
+<!--CSCI 115 MiniProject-->
+<!--Xiaoya Xing-->
+<!--664977774-->
+<!--Game & Music-->
+<!--Page 5-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="html tutorial, css tutorial">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <title>Xiaoya's Favorite Games & Music</title>
+
+    <link rel="stylesheet" type="text/css" href="css/back_to_page.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        
+        body{
+            background-color: #0f59a4;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment:scroll;
+            background-position: center;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        /*Page Content*/
+        .title{
+            text-align: left;
+            font-size: 35px;
+            color:#c6daf1;
+            font-family: Georgia, serif;
+            font-weight: bold;
+            padding-top: 10px;
+            padding-left: 280px;
+            padding-bottom: 20px;
+            padding-right: 800px;
+        }
+
+        .hobby{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .hobbies_1{
+            width: 850px;
+            height: 600px;
+            margin-left: 270px;
+            margin-right: 100px;
+            margin-bottom: 70px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hobbies_2{
+            width: 300px;
+            height: 300px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 70px;
+            margin-top: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hobbies_3{
+            width: 300px;
+            height: 350px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 70px;
+            margin-top: 30px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hobbies_1 img{
+            width: 100%;
+            height: 100%;
+            display: block;
+            transition: transform 2.5s ease;
+            object-fit: cover;
+        }
+
+        .hobbies_2 img{
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .hobbies_3 img{
+            width: 100%;
+            height: 90%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .hobby_text{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            color: #e4edf7;
+            text-align: center;
+            font-size: 25px;
+            font-family: Georgia, serif;
+            background-color: #074684;  
+        }
+
+        .hobbies_1:hover img{
+            transform: scale(1.35);
+        }
+
+        .intro_text{
+            display: block;
+            text-align: justify;
+            font-family: Georgia, serif;
+            font-size: 20px;
+            color: #e4edf7;
+            margin: 10px 180px;
+        }
+
+        .intro{
+            margin-left: 30px;
+            margin-right: 50px;
+            margin-bottom: 60px;
+            line-height: 200%;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Nav Bar-->
+    <div>
+        <div class="header">
+            <ul>
+                <li><a href="1_mainpage.html">Home</a></li>
+
+                <li><a href="2_aboutme_page.html">About Me</a></li>
+                
+
+                <li><a href="3_myhobby_page.html">My Hobby</a>
+                    <ul class="hobbit_subtitles">
+                        <li><a href="4_travel_page.html">Travel</a></li>
+                        <li><a href="5_gamemusic_page.html">Game & Music</a></li>
+                        <li><a href="6_anime_page.html">Anime</a></li>
+                        <li><a href="7_myidol_page.html">My Idol</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!--Title-->
+    <div>
+        <div class="hobby">
+            <p class="title">My Favorite Game</p>
+
+            <!--Wang Chuan Dream-->
+            <div class="hobbies_1"> 
+                <a href="https://dream.163.com/#/" target="_blank">
+                    <img src="image/wcfhl1.png" alt="Wang Chuan Dream">
+                </a>    
+                <div><p class="hobby_text">Wang Chuan Dream</p></div>
+            </div>
+            
+            <div class="intro_text">
+                <p class="intro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="font-size: 130%;">I really enjoy the game Wang Chuan Dream.</strong>It's a fantasy world based on Chinese history, where historical figures from various professions are gathered. In this world, we can experience the collision of thoughts and history from different periods. The fun gameplay is so engaging that I often lose track of time, and it also has educational value. Moreover, there's a music project with the same name, so I can listen to beautiful music while playing the game, which I find very satisfying.</p>
+            </div>
+            
+            <!--Three Small Photos-->
+            <div class="hobbies_2">
+                <img src="image/wcfhl2.png" alt="New Chapter">
+            </div>
+
+            <div class="hobbies_2">
+                <img src="image/bqm.png" alt="Cats">
+            </div>
+
+            <div class="hobbies_2">
+                <img src="image/wcfhl3.jpg" alt="Song">
+            </div>
+
+            <!--Music-->
+            <p class="title">My Favorite Music</p>
+            <!--Three Songs-->
+            <div class="hobbies_3">
+                <audio src="audios/福禄寿FloruitShow_我用什么把你留住.mp3" controls="controls"></audio>
+                <a href="https://music.apple.com/us/album/%E6%88%91%E7%94%A8%E4%BB%80%E4%B9%88%E6%8A%8A%E4%BD%A0%E7%95%99%E4%BD%8F/1669352621" target="_blank">
+                    <img src="image/fls2.jpg" alt="Wo Yong Shen Me Ba Ni Liu Zhu">
+                </a>
+                <div><p class="hobby_text">我用什么把你留住</p></div>
+            </div>
+
+            <div class="hobbies_3">
+                <audio src="audios/陈婧霏_夏宫.mp3" controls="controls"></audio>
+                <a href="https://music.apple.com/us/album/%E9%99%B3%E5%A9%A7%E9%9C%8F/1548682065" target="_blank">
+                    <img src="image/cjf.jpg" alt="Chen Jing Fei">
+                </a>
+                <div><p class="hobby_text">夏宫</p></div>
+            </div>
+
+            <div class="hobbies_3">
+                <audio src="audios/SufjanStevens_FourthOfJuly.mp3" controls="controls"></audio>
+                <a href="https://music.apple.com/us/album/carrie-lowell/955572616" target="_blank">
+                    <img src="image/sfj1.jpg" alt="Carrie & Lowell">
+                </a>
+                <div><p class="hobby_text">Fouth of July</p></div>
+            </div>
+
+            <div class="intro_text">
+                <p class="intro">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="font-size: 130%;">These are three songs that I love very much;</strong> they can be considered my life-saving remedies to some extent. Sometimes, when I'm feeling down, I'll stop what I'm doing and find a secluded place to listen to these three songs. They act as a repair shop in my life, patching up my heart and alleviating my distress when I'm feeling upset.</p>
+            </div>
+        </div>
+    </div>
+
+    <hr class="line">
+
+    <div class="go_back">
+        <a href="3_myhobby_page.html" class="back_to">——&nbsp;Back to My Hobby&nbsp;——</a> 
+        <br>
+        <a href="1_mainpage.html" class="back_to">——&nbsp;Back to Home&nbsp;——</a>
+    </div>
+       
+</body>
+</html>
